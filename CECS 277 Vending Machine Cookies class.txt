@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Cookies extends VendingMachines {
+
+   double price; // attribute for cookies
+    int quantity;
+
+    public Cookies(String name, double price, double cost){
+        super(name, cost);
+        this.price = price; // seen as a local variable now
+        this.quantity = quantity; // amount of cookies user wanted
+    }
+
+    public double getCoins(){
+        Scanner sc = new Scanner(System.in);
+        Double coin = sc.nextDouble(); // asks the user to put in money or coin
+        System.out.println("Customer's money" + coin);
+
+        return 0;
+    }
+    // using scanner to get the user's requests
+    @Override
+    public double getCost() {
+        System.out.println(quantity * cost);
+        return 0;
+    }
+}

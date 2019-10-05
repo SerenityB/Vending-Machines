@@ -1,0 +1,14 @@
+public class Candy extends VendingMachines {
+
+
+    double price;
+
+    public Candy(String name, double price, double cost){
+        super(name, cost);
+        this.price = price;
+    }
+    @Override
+    public double getCost() {
+        return 0;
+    }
+}

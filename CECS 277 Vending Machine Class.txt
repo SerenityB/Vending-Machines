@@ -1,0 +1,23 @@
+public abstract class VendingMachines { // is superclass
+
+    protected String name; // instant variable name of product
+    double cost;
+
+    public VendingMachines() {
+        //this("");
+        double cost;
+    }
+    public VendingMachines(String name, double cost){
+        this.name = name; // use as local variable with the 'this'
+        this.cost = cost;
+    }
+
+
+    public final String getName() { // getting the name of the product
+        return name;
+    }
+
+
+    public abstract double getCost();
+
+}
